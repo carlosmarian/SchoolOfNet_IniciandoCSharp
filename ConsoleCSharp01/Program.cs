@@ -6,10 +6,13 @@ namespace ConsoleCSharp01
     {
         static void Main()
         {
+            //MinhaData m = new MinhaData();
+            //m.dataAtual
+
             Pessoa pessoa = new Pessoa();
             pessoa.Nome = "João";
             pessoa.SobreNome = "Silva";
-            pessoa.Sexo = 'M';
+            pessoa.Sexo = Sexo.Masculino;
             pessoa.Idade = 20;
 
             pessoa.Idade = -1;

@@ -3,12 +3,23 @@ using System;
 
 namespace ConsoleCSharp01
 {
+    public enum Sexo
+    {
+        Masculino = 1,
+        Feminimo = 2
+    }
+
+    public struct MinhaData
+    {
+        public DateTime dataAtual;
+    }
+
     class Pessoa
     {
         private string nome;
         private string sobreNome;
         private int idade;
-        private char sexo;
+        private Sexo sexo;
 
         public string Nome
         {
@@ -34,7 +45,7 @@ namespace ConsoleCSharp01
             }
         }
 
-        public char Sexo
+        public Sexo Sexo
         {
             get { return sexo; }
             set { sexo = value; }
