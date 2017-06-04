@@ -5,10 +5,40 @@ namespace ConsoleCSharp01
 {
     class Pessoa
     {
-        public string nome;
-        public string sobreNome;
-        public int idade;
-        public char sexo;
+        private string nome;
+        private string sobreNome;
+        private int idade;
+        private char sexo;
+
+        public string Nome
+        {
+            get { return nome; }
+            set { nome = value; }
+        }
+
+        public string SobreNome
+        {
+            get { return sobreNome; }
+            set { sobreNome = value; }
+        }
+
+        public int Idade
+        {
+            get { return idade; }
+            set
+            {
+                if (value >= 0)
+                {
+                    idade = value;
+                }
+            }
+        }
+
+        public char Sexo
+        {
+            get { return sexo; }
+            set { sexo = value; }
+        }
 
         //Construtor
         public Pessoa()
@@ -20,6 +50,6 @@ namespace ConsoleCSharp01
         {
             Console.WriteLine(algo);
 
-        }        
+        }
     }
 }

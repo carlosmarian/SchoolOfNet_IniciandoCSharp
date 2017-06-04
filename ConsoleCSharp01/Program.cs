@@ -7,16 +7,18 @@ namespace ConsoleCSharp01
         static void Main()
         {
             Pessoa pessoa = new Pessoa();
-            pessoa.nome = "João";
-            pessoa.sobreNome = "Silva";
-            pessoa.sexo = 'M';
-            pessoa.idade = 20;
+            pessoa.Nome = "João";
+            pessoa.SobreNome = "Silva";
+            pessoa.Sexo = 'M';
+            pessoa.Idade = 20;
 
-            pessoa.Falar(string.Format("Olá, sou o {0} {1} e tenho {2} anos ", pessoa.nome, pessoa.sobreNome, pessoa.idade));
+            pessoa.Idade = -1;
+
+            pessoa.Falar(string.Format("Olá, sou o {0} {1} e tenho {2} anos ", pessoa.Nome, pessoa.SobreNome, pessoa.Idade));
 
             pessoa = new Pessoa();
 
-            pessoa.Falar(string.Format("Olá, sou o {0} {1} e tenho {2} anos ", pessoa.nome, pessoa.sobreNome, pessoa.idade));
+            pessoa.Falar(string.Format("Olá, sou o {0} {1} e tenho {2} anos ", pessoa.Nome, pessoa.SobreNome, pessoa.Idade));
             Console.ReadLine();
         }
     }
